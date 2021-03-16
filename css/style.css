@@ -1,0 +1,621 @@
+/*Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/*=============
+	Font Family
+===============
+font-family: 'Open Sans', sans-serif;
+font-family: 'Raleway', sans-serif;*/
+
+/*============
+	Global CSS
+=============*/
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: 'Open Sans', sans-serif;
+	height: auto;
+}
+a{
+	text-decoration: none;
+}
+p{
+	font-family: 'Open Sans', sans-serif;
+}
+/*============
+	Header CSS
+=============*/
+
+header{
+	background: #000000;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    margin: 0 20px;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 14px;
+    font-weight: 600;
+}
+.navbar-light .navbar-nav .nav-link:focus, 
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #05f945;
+    font-size: 22px;
+    font-size: 25px;
+    font-weight: 700;
+    transition: 1s ease-in-out;
+}
+.navbar-light .navbar-nav .nav-link::after{
+	content: "";
+	position: absolute;
+	width: 100%;
+    height: 3px;
+    background: rgba(255, 139, 56, 0);
+    bottom: 0;
+    left: -100%;
+    transition: 0.3s ease-in-out;
+}
+.navbar-light .navbar-nav .nav-link:hover::after{
+	left: 0%;
+	background: rgba(255, 139, 56, 1);
+}
+.navbar-light .navbar-toggler {
+    color: #fff;
+    border-color: #fff;
+    background: #fff;
+}
+
+/*============
+	Banner CSS
+=============*/
+
+.banner-section{
+	background: url(../img/Banner-back.png) no-repeat center top;
+	background-size: cover;
+}
+.banner-section h1{
+	color: #fff;
+    margin-top: 100px;
+    font-size: 75px;
+    font-weight: 600;
+}
+.banner-section h1 span{
+	color: #e07b34;
+	font-weight: 200;
+}
+.banner-section h2{
+	color: #fff;
+}
+.banner-section h3{
+	color: #fff;
+	font-size: 34px;
+}
+.banner-section p{
+	color: #fff;
+    font-size: 15px;
+    font-weight: 200;
+    margin-top: 50px;
+    width: 70%;
+}
+.divider{
+	background: #fff;
+    width: 70px;
+    height: 3px;
+    margin-top: 50px;
+}
+.form-section{
+	background: #fff;
+	margin-top: 135px;
+	border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.form-body{
+	padding: 40px 25px;    
+}
+.form-control{
+	border: none;
+    border-bottom: 1px solid #9e9898;
+    padding: 15px 20px;
+    border-radius: 0;
+}
+.offset-md-2 {
+    margin-left: 11.666667%;
+}
+.banner-section h4{
+	color: #000;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    background: #f5f5f5;
+    padding: 5px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.banner-section h4 span{
+	color: #e07b34;
+}
+.btn-download{
+	color: #fff;
+    border: 2px solid #fff;
+    border-radius: 0px;
+    padding: 5px 20px;
+    margin-top: 25px;
+    margin-bottom: 70px;
+}
+.btn-submit{
+	margin-top: 20px;
+    width: 100%;
+    color: #fff;
+    background: #ff9b51;
+    border-radius: 0;
+    height: 50px;
+}
+.btn:hover {
+    color: #0c0002;
+    background: #f3f1f1;
+    font-size: 16px;
+    transition: 0.3s ease-in-out;
+}
+
+/*==================
+	Social Media CSS
+==================*/
+
+.social-media-section{
+	box-shadow: 1px 1px 1px #000;
+}
+.social-media-section h1{
+	font-size: 21px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+.social-media-section p{
+	font-size: 16px;
+    font-weight: 500;
+    width: 80%;
+}
+.social-item{
+	font-size: 50px;
+	margin-top: 20px;
+}
+.social-item ul li{
+	list-style: none;
+	display: inline;
+	padding: 22px;
+}
+.social-item ul li a{
+	color: #cccccc;
+}
+.social-item ul li .fa:hover{
+    color: #cccccc;
+    transform: rotate(360deg);
+    transition: 0.3s ease-in-out;
+}
+.shadow{
+	width: 100%;
+    height: 2px;
+    background: #dcd6d6;
+}
+
+/*===========
+	Tab CSS
+=============*/
+
+.tab-section{
+	background: #f5f5f5;
+	padding: 100px;
+}
+.tab-panel{
+	margin-top: 50px;
+}
+.tab-panel ul li{
+	background: #333333;
+    color: #fff;
+    list-style: none;
+    margin-bottom: 10px;
+    width: 120px;
+    height: 120px;
+    text-align: center;
+    line-height: 120px;
+}
+.tab-panel ul .active{
+	background: #ff8b38;
+}
+.tab-panel ul li:hover{
+	cursor: pointer;
+}
+.tab-section h1{
+	margin-top: 50px;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 60px;
+}
+.tab-section p{
+	font-size: 18px;
+    font-weight: 400;
+}
+.btn-dwn{
+	margin-top: 40px;
+    background: #ff8b38;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    box-shadow: 2px 2px 3px #7b7777;
+    margin-bottom: 100px;
+}
+.img-tab{
+	margin-top: 80px;
+    margin-left: 50px;
+}
+
+/*============
+	List CSS
+=============*/
+
+.img-feature1{
+	box-shadow: 7px 6px 35px #ab9f9f;
+}
+
+.list-section{
+	padding: 100px 0 50px;
+}
+.list-section h1{
+	font-size: 24px;
+    font-weight: 700;
+    margin-top: -30px;
+}
+.list-section p{
+	font-size: 16px;
+    font-weight: 100;
+    width: 75%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.divider2{
+	background: #ff8b38;
+    width: 70px;
+    height: 3px;
+    margin-top: 30px;
+}
+.list-item1{
+	position: relative;
+    margin-left: 60px;
+}
+.list-item1 h2{
+	font-size: 20px;
+    font-weight: 600;
+}
+.list-item1 p{
+	margin-top: -8px;
+    font-size: 14px;
+    width: 75%;
+}
+.list-item2{
+	position: relative;
+    margin-left: 60px;
+}
+.list-item2 h2{
+	font-size: 20px;
+    font-weight: 600;
+}
+.list-item2 p{
+	margin-top: -8px;
+    font-size: 14px;
+    width: 75%;
+}
+.img-logo{
+	position: absolute;
+}
+
+/*============
+	Picture CSS
+=============*/
+
+.pic-section{
+    padding: 100px 0;
+	background: #f5f5f5;
+}
+.pic-section h1{
+	font-size: 24px;
+    font-weight: 700;
+}
+.pic-section p{
+	font-size: 16px;
+    font-weight: 100;
+    width: 82%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/*=============
+	Awesome CSS
+==============*/
+
+.awesome-section{
+	padding: 100px 0;
+}
+.awesome-section h1{
+	font-family: 'Raleway', sans-serif;*/
+}
+.awesome-section p{
+	margin-top: 30px;
+}
+.divider3{
+	margin: 0 auto;
+	background: #ff8b38;
+    width: 70px;
+    height: 3px;
+    margin-top: 30px;
+}
+.section-item{
+	margin-top: 80px;
+}
+.section-item h2{
+	margin-top: 40px;
+    font-size: 25px;
+    font-weight: 600;
+}
+.section-item p{
+	font-size: 15px;
+    font-weight: 500;
+    width: 92%;
+}
+
+/*============
+	Price CSS
+=============*/
+
+.price-section{
+	padding: 100px 0;
+	background: #f5f5f5;
+}
+.price-section h1{
+	font-family: 'Raleway', sans-serif;*/
+}
+.price-section p{
+	margin-top: 30px;
+}
+.item-title{
+	background: #333333;	
+}
+.price-item{
+	margin-top: 50px;
+}
+.price-item h2{
+	color: #fff;
+    padding-top: 18px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.price-item h3{
+	color: #fff;
+	padding-top: 15px;
+}
+.price-item h3 span{
+	color: #fff;
+    font-size: 50px;
+    font-weight: 700;
+}
+.price-item h6{
+	font-size: 15px;
+    background: #ff8b38;
+    padding: 10px;
+    color: #fff;
+}
+.price-item p{
+	color: #b9b0b0;
+	font-size: 14px;
+}
+.item-info{
+	line-height: 15px;
+}
+.item-info p{
+	text-transform: uppercase;
+    background: #fff;
+    color: #7d7474;
+    border-bottom: 1px solid #e4dcdc;
+    font-size: 15px;
+    padding: 12px;
+    margin: 1px 0px;
+}
+.divider4{
+	margin: 0 auto;
+    background: #f9f8f7;
+    height: 2px;
+    margin-top: 15px;
+}
+.divider5{
+	margin: 0 auto;
+	background: #ff8b38;
+    height: 5px;
+    margin-top: 30px;
+}
+.item-dif{
+	margin-top: -25px;
+}
+
+/*==============
+	Customer CSS
+==============*/
+
+.customer-section{
+	padding: 100px 0;
+}
+.customer-section h1{
+	font-family: 'Raleway', sans-serif;
+	text-align: center;
+}
+.customer-section p{
+	margin-top: 30px;
+	padding-bottom: 50px;
+	text-align: center;
+	position: relative;
+	z-index: 1;
+}
+.arrow{
+    transform: rotate(45deg);
+    background: #f1efef;
+    height: 20px;
+    width: 18px;
+    margin-top: 15px;
+    position: absolute;
+    margin-top: -26px;
+    margin-left: 25px;
+    z-index: -1;
+}
+.sec-item p{
+	background: #f1efef;
+    border-radius: 5px;
+    padding: 12px;
+    font-size: 14px;
+    width: 69%;
+    text-align: left;
+    color: #757474;
+}
+.img-customer{
+	margin-top: 15px;
+}
+
+/*============
+	Style CSS
+=============*/
+
+.style-section{
+	padding: 100px 0;
+	background: url(../img/background.png);
+	background-size: cover;
+}
+.style-section h1{
+	color: #fff;
+}
+.style-section p{
+	color: #ded8d8;
+	margin-top: 50px;
+}
+.divider7{
+	margin: 0 auto;
+	background: #fff;
+    width: 70px;
+    height: 3px;
+    margin-top: 30px;
+}
+/*============
+	Contuct CSS
+=============*/
+.contact-section{
+	padding: 100px 0;
+}
+.contact-section h1{
+	font-family: 'Raleway', sans-serif;
+	text-align: center;
+}
+.contact-section p{
+	margin-top: 30px;
+	padding-bottom: 50px;
+	text-align: center;
+}
+.form-control-textarea{
+	border: none;
+    border-bottom: 1px solid #afabab;
+    width: 100%;
+    margin-top: 21px;
+    line-height: 36px;
+}
+
+/*============
+	Footer CSS
+=============*/
+
+footer{
+	background: #000;
+}
+.social-panel ul li{
+	list-style: none;
+    display: inline;
+    font-size: 33px;
+}
+.social-panel ul li a{
+	color: #fff;
+	padding: 0 20px;
+}
+.social-panel ul{
+	text-align: center;
+	padding: 0px 10px;
+	padding-top: 20px;
+}
+footer p{
+	color: #ada7a7;
+	text-align: center;
+	font-size: 15px;
+	margin-bottom: 0px;
+}
+.send-btn{
+	text-align: center;
+}
+.btn-dwn2{
+	margin-top: 40px;
+    background: #ff8b38;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    box-shadow: 2px 2px 3px #7b7777;
+    margin-bottom: 100px;
+}
+
+/*Media Query For Mobile*/
+
+@media ( min-width: 320px ) and ( max-width: 576px ){
+    .navbar-light .navbar-nav .nav-link {     margin: 0; font-size: 17px; text-align: right; }
+    .banner-section { text-align: center; }
+    .banner-section h1 { font-size: 45px; margin-top: 20px; }
+    .banner-section h3 { font-size: 20px; }
+    .divider { margin: 30px auto; }
+    .banner-section p { width: 100%; margin: 0; }
+    .form-section { margin: 0 0 30px; }
+    .social-media-section { text-align: center; }
+    .social-media-section h1 { font-weight: 700; }
+    .social-media-section p { width: 100%; }
+    .social-item ul { padding: 0; }
+    .social-item ul li a { font-size: 35px; }
+    .social-item { margin: 0; }
+    .tab-section { padding: 30px 0; text-align: center; }
+    .tab-panel { margin: 0; margin-left: -25px; }
+    .tab-panel ul li { width: 80px; height: 80px; line-height: 80px; display: inline-block; margin: 0 6px; }
+    .tab-section h1 { font-size: 15px; margin: 20px 0; }
+    .tab-section p { font-size: 15px; }
+    .btn-dwn { font-size: 15px; padding: 7px 12px; margin: 20px 0 40px; }
+    .img-tab { display: block; margin: 0 auto; }
+    .img-feature1 { width: 100%; }
+    .divider2 { margin: 30px auto; }
+    .list-section p { text-align: center; width: 100%; font-size: 15px; }
+    .list-item1 p { text-align: left; }
+    .list-item2 p { text-align: left; margin: 0; }
+    .pic-section { text-align: center; padding: 50px 0; }
+    .pic-section p { width: 100%; font-size: 13px; }
+    .price-section { padding: 30px 0; }
+    .section-item { margin: 25px 0; }
+    .section-item h2 { font-size: 20px; margin: 15px 0; }
+    .section-item p { width: 100%; margin: 0px 0 25px; }
+    .item-dif { margin: 50px 0; }
+    .customer-section { padding: 30px 0; }
+    .customer-section h1 { font-size: 17px; font-weight: 700; }
+    .customer-section p { font-size: 13px; padding: 0 }
+    .sec-item p { width: 100%; padding: 10px; }
+    .style-section { padding: 30px 0; }
+    .style-section h1 { font-size: 22px; }
+    .style-section p { font-size: 14px; margin: 15px 0; }
+    .btn-download { margin: 0; }
+    .contact-section { padding: 30px 0; }
+    .contact-section h1 { font-size: 22px; font-weight: 700; }
+    .contact-section p { font-size: 13px; padding: 0; margin: 0; }
+    .divider3 { margin: 15px auto; }
+    .form-body { padding: 10px 20px; }
+    .btn-dwn2 { margin: 12px 0; padding: 10px 15px; font-size: 15px; }
+    .social-panel ul li a { padding: 0 10px; font-size: 25px; }
+}
